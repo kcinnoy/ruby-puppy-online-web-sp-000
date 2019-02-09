@@ -9,7 +9,9 @@ attr_accessor :name
   end
 
   def self.all
-    puts @@all
+    @@all.map do |dog|
+      puts dog.name
+    end
   end
 
   def self.clear_all
